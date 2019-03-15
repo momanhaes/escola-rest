@@ -62,7 +62,7 @@ public class CursoResource {
 				return Response.status(400).header("Motivo", e.getTipo())
 						.build();
 			if (e.getTipo() == ServiceExceptionEnum.CURSO_NOME_INVALIDO)
-				return Response.status(400).header("Motivo", "Nome inválido")
+				return Response.status(400).header("Motivo", "Nome invï¿½lido")
 						.build();
 			else
 				return Response.status(400).header("Motivo", e.getMessage())
@@ -82,10 +82,10 @@ public class CursoResource {
 			return Response.created(new URI("" + cursoDTO.getCodigo())).build();
 		} catch (ServiceException e) {
 			if (e.getTipo() == ServiceExceptionEnum.CURSO_CODIGO_INVALIDO)
-				return Response.status(400).header("Motivo", "Código inválido")
+				return Response.status(400).header("Motivo", "Cï¿½digo invï¿½lido")
 						.build();
 			if (e.getTipo() == ServiceExceptionEnum.CURSO_NOME_INVALIDO)
-				return Response.status(400).header("Motivo", "Nome inválido")
+				return Response.status(400).header("Motivo", "Nome invï¿½lido")
 						.build();
 			else
 				return Response.status(400).header("Motivo", e.getMessage())

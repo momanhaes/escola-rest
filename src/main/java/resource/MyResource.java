@@ -1,4 +1,4 @@
-package br.com.softwareacademy.escola_rest;
+package resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
