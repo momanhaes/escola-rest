@@ -1,6 +1,2 @@
-/target/
-/bin/
-.DS_Store
-.project
-.classpath
-.settings
+node_modules
+coverage
